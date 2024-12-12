@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(244, 208, 78, 1);
+}
+
+.main-card {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid rgba(17, 17, 17, 1);
+    box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
+}
+
+.card-image {
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .card-image {
+        width: 279px;
+    }
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 12px;
+}
+
+.label {
+    padding: 4px 12px;
+    background-color: rgba(244, 208, 78, 1);
+    width: fit-content;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(17, 17, 17, 1);
+}
+
+@media (max-width: 576px) {
+  .label {
+      font-size: 12px;
+      line-height: 18px;
+  }
+}
+
+.date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(17, 17, 17, 1);
+}
+
+@media (max-width: 576px) {
+   .date {
+       font-size: 12px;
+       line-height: 18px;
+   }
+}
+
+.title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(17, 17, 17, 1);
+    transition: 0.3s;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.title:hover {
+    color: rgba(244, 208, 78, 1);
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.description {
+    max-width: 336px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(107, 107, 107, 1);
+}
+
+@media (max-width: 576px) {
+    .description {
+        max-width: 279px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.author-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(17, 17, 17, 1);
+}
